@@ -1,15 +1,17 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import CodeBlocks from "./About/CodeBlock";
-import Head from "./About/head";
+import Header from "./Header";
 import { MantineProvider } from "@mantine/core";
+import Tabs from "./tabs";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <MantineProvider>
-      <Head />
-      <CodeBlocks />
+      <div className="container">
+        <Header />
+        <Tabs />
+      </div>
     </MantineProvider>
   </StrictMode>
 );

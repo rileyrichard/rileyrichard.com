@@ -27,38 +27,129 @@ body,
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #121212;
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background-color: #121212;
+  border-radius: 8px;
+  text-align: left;
+  min-height: 300px;
+  margin-top: 20px;
+}
+
+/* CSS */
+button {
+  align-items: center;
+  appearance: none;
+  background-color: #1f1f1f; /* Match the container's background color */
+  border: 1px solid #121212; /* Subtle border to fit the dark theme */
+  border-radius: 4px;
+  color: #ffffff; /* White text for contrast */
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "EpicFont", monospace;
+  font-size: 18px;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+button:hover {
+  background-color: #1f1f1f; /* Slightly lighter background on hover */
+  border-color: #121212; /* Highlight border on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+button:focus {
+  outline: none; /* Remove default focus outline */
+  background-color: #1f1f1f; /* Highlight background on focus */
+  color: #ffffff; /* Dark text for contrast */
+}
+
+button:active {
+  background-color: #1f1f1f; /* Yellow background on click */
+  border-color: #121212; /* Blue border on click */
+  transform: translateY(2px); /* Pressed effect */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5); /* Inset shadow for depth */
+}
+
 a {
-  font-weight: 500;
-  color: #646cff;
+  color: #121212;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #121212;
 }
 
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-width: 320px;
+  justify-content: left;
+  align-items: left;
+  min-width: 350px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 0.95em;
   line-height: 1.1;
-  text-align: center; /* Center text */
   padding: 0px;
   margin-bottom: 5px;
-  display: inline-block; /* Ensure the h1's width is based on its content */
+}
+
+h2 {
+  font-size: 1.2em;
+}
+.eduCodeBlock {
+  padding-top: 20px;
+}
+
+.edu {
+  font-size: 1.5em;
+  line-height: 1.1;
+  padding: 0px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.projectsHeader {
+  font-size: 1.5em;
+  line-height: 1.1;
+  padding: 0px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+.projectsHeader:hover {
+  text-decoration: underline;
+}
+
+.name {
+  font-size: 2.75em;
+}
+.biz {
+  font-size: 1.1em;
+  color: #888888;
+}
+.loc {
+  font-size: 1.1em;
+  color: #888888;
 }
 
 .bbtech {
@@ -69,29 +160,26 @@ h1 {
   color: #ffc61b;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #121212;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #ffc61b;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+button:focus {
+  border-color: #121212;
+  outline: none;
+  text-decoration: underline;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2.4em; /* Adjust heading size for smaller screens */
+  .name {
+    font-size: 2em; /* Adjust heading size for smaller screens */
+    padding-left: 5px;
+  }
+  .biz {
+    font-size: 1em;
+    padding-left: 5px;
+  }
+
+  .loc {
+    font-size: 0.95em;
+    padding-left: 5px;
   }
 
   p {

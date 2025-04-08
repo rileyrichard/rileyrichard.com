@@ -1,6 +1,6 @@
 import { CodeBlock, tomorrowNight } from "react-code-blocks";
 
-function AboutCodeBlock({
+function CodeBlocks({
   code,
   language,
   showLineNumbers,
@@ -19,4 +19,4 @@ function AboutCodeBlock({
   );
 }
 
-export default AboutCodeBlock;
+export default CodeBlocks;
