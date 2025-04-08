@@ -55,7 +55,7 @@ const Projects: React.FC = () => {
 
           <a
             className="projectLink"
-            href="https://github.com/BlueberryTechnologies/Kiwi/releases/latest"
+            href="https://github.com/BlueberryTechnologies/Bianry"
             target="_blank">
             Download Here!
           </a>
