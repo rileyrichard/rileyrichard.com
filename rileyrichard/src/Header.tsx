@@ -22,8 +22,8 @@ const Header: React.FC = () => {
       <h3 className="loc">South Dartmouth, MA</h3>
       <p>
         I'm a Computer Science undergraduate student at the University of
-        Massachusetts Dartmouth. I enjoy making fun obscure things as well as
-        dealing with the challenges that come along with it.
+        Massachusetts Dartmouth. I enjoy making fun and obscure things as well
+        as dealing with the challenges that come along with it.
       </p>
       <hr />
     </div>

@@ -5,10 +5,9 @@ const Work: React.FC = () => {
     <div className="container">
       {/* Page Title */}
       <h1 className="workTitle">Work Experience</h1>
-      {/*<a className="resume" target="_blank" href="">
+      <a className="resume" target="_blank" href="/resume.pdf">
         You can download my resume here!
       </a>
-      */}
       {/* Work Experience Section */}
       <div className="workSection">
         {/* Example Work Entry */}
