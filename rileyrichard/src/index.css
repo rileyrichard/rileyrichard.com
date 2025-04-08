@@ -119,6 +119,11 @@ h2 {
 }
 .eduCodeBlock {
   padding-top: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+  white-space: pre-wrap; /* Allow wrapping for long lines */
+  word-wrap: break-word; /* Break long words if necessary */
+  max-width: 100%; /* Ensure the code block does not exceed the screen width */
+  box-sizing: border-box; /* Include padding and border in width calculations */
 }
 
 .edu {
@@ -129,15 +134,59 @@ h2 {
   margin-bottom: 5px;
 }
 
-.projectsHeader {
+.projectTitle {
   font-size: 1.5em;
   line-height: 1.1;
   padding: 0px;
   padding-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
-.projectsHeader:hover {
+.projectTitle:hover {
   text-decoration: underline;
+}
+
+.projectDiv {
+  outline: 2px solid #888888;
+  padding: 15px;
+  margin: 20px;
+}
+
+.projectName {
+  font-size: 1.3em;
+}
+
+.projectSummary {
+  margin-left: 10px;
+  color: #888888;
+}
+.projectFeatures {
+  font-size: 1.1em;
+  margin-left: 10px;
+}
+.projectLink {
+  font-size: 1.1em;
+  margin-left: 10px;
+  color: #ffffff;
+}
+.projectLinkHeader {
+  color: #ffffff;
+}
+.projectLinkHeader:hover {
+  color: #fee187;
+}
+.projectLink:hover {
+  color: #fee187;
+}
+
+.projectList {
+  color: #888888;
+}
+
+.listTitle {
+  padding-top: 10px;
+}
+.badges {
+  padding-right: 10px;
 }
 
 .name {
@@ -166,6 +215,126 @@ button:focus {
   text-decoration: underline;
 }
 
+.details {
+  padding-top: 10px;
+}
+
+details > summary {
+  list-style-type: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary::before {
+  content: "> ";
+}
+
+details[open] > summary::before {
+  content: "⌄ ";
+}
+
+.email {
+  color: #fee187;
+  text-decoration: underline;
+}
+.email:hover {
+  color: #ffc61b;
+}
+.emailHeader {
+  font-size: 1.1em;
+  color: #888888;
+  padding: 0px;
+  margin: 0;
+}
+
+.emailHeader a {
+  font-size: 1em;
+  color: #888888;
+  padding: 0px;
+  margin: 0;
+}
+
+.emailHeader:hover {
+  color: #ffc61b;
+}
+
+/* Default styling for badges (desktop view) */
+.badges {
+  display: inline-block; /* Default inline layout */
+  width: auto; /* Allow badges to adjust their width */
+  height: 22px; /* Badge height */
+  padding: 0; /* Remove extra padding */
+  margin-right: 10px; /* Spacing between badges */
+  margin-bottom: 0; /* No spacing below badges by default */
+}
+
+.badgesExperience {
+  display: inline-block; /* Default inline layout */
+  width: auto; /* Allow badges to adjust their width */
+  height: 30px; /* Badge height */
+  padding: 0; /* Remove extra padding */
+  margin-right: 10px; /* Spacing between badges */
+  margin-bottom: 0; /* No spacing below badges by default */
+}
+
+/* Work Page Styles */
+.workTitle {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.resume {
+  color: #ffffff;
+}
+.resume:hover {
+  color: #ffc61b;
+}
+
+.workSection {
+  margin-top: 20px;
+}
+
+.workEntry {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #888888;
+  border-radius: 8px;
+  background-color: #1f1f1f;
+}
+
+.workPosition {
+  font-size: 1.5em;
+  color: #fee187;
+  margin-bottom: 5px;
+}
+
+.workCompany {
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.workDuration {
+  font-size: 1em;
+  color: #888888;
+  margin-bottom: 10px;
+}
+
+.workResponsibilities {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+.workResponsibilities li {
+  margin-bottom: 5px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .name {
@@ -187,11 +356,123 @@ button:focus {
   }
 
   button {
-    padding: 0.5em 1em; /* Adjust button padding */
-    font-size: 0.9em; /* Adjust button font size */
+    padding: 0.8em 1.5em; /* Increase padding for larger buttons */
+    font-size: 1em; /* Slightly increase font size */
+    height: auto; /* Allow height to adjust dynamically */
+    border-radius: 6px; /* Add a slightly larger border radius */
   }
 
   footer {
     padding: 15px 0; /* Reduce footer padding */
+  }
+
+  /* Adjust container padding and spacing */
+  .container {
+    padding: 15px; /* Reduce padding for smaller screens */
+    margin-top: 10px; /* Reduce top margin */
+  }
+
+  /* Adjust project title and summary spacing */
+  .projectTitle {
+    font-size: 1.4em; /* Slightly reduce font size for better fit */
+    margin-bottom: 10px; /* Add spacing below the title */
+  }
+
+  .projectSummary {
+    font-size: 1em; /* Adjust font size for readability */
+    margin-left: 5px; /* Reduce left margin */
+  }
+
+  /* Adjust project features and list spacing */
+  .projectFeatures {
+    font-size: 1em; /* Adjust font size */
+    margin-left: 5px; /* Reduce left margin */
+  }
+
+  .projectList {
+    padding-left: 15px; /* Add padding for better readability */
+    margin-bottom: 10px; /* Add spacing between lists */
+  }
+
+  /* Adjust badges spacing */
+  .badges {
+    display: block; /* Make badges appear as block elements */
+    margin-right: 0; /* Remove right margin */
+    margin-top: 5px;
+    margin-bottom: 8px; /* Add spacing below each badge */
+  }
+
+  .projectName {
+    margin-bottom: 10px; /* Add spacing between the title and badges */
+  }
+
+  /* Adjust headings */
+  h1 {
+    font-size: 1.2em; /* Increase font size for better readability */
+    margin-bottom: 10px; /* Add spacing below headings */
+  }
+
+  h2 {
+    font-size: 1.1em; /* Adjust font size */
+    margin-bottom: 8px; /* Add spacing below headings */
+  }
+
+  /* Adjust text alignment and spacing */
+  p {
+    padding-left: 10px; /* Add padding for better readability */
+    margin-bottom: 10px; /* Add spacing between paragraphs */
+  }
+
+  /* Adjust footer spacing */
+  footer {
+    padding: 15px 10px; /* Add padding for smaller screens */
+    font-size: 0.9em; /* Reduce font size */
+  }
+
+  .eduCodeBlock {
+    padding: 10px; /* Reduce padding for smaller screens */
+    font-size: 0.9em; /* Adjust font size for better readability */
+    overflow-x: auto; /* Ensure horizontal scrolling is enabled */
+    white-space: pre; /* Prevent wrapping for code */
+  }
+}
+
+/* Additional Tweaks for Very Small Screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .projectTitle {
+    font-size: 1.3em; /* Further reduce font size */
+  }
+
+  .projectSummary,
+  .projectFeatures {
+    font-size: 0.9em; /* Reduce font size for smaller screens */
+  }
+
+  .badges {
+    height: 22px; /* Further reduce size for very small screens */
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  button {
+    font-size: 1.1em; /* Increase font size for better readability */
+    padding: 0.9em 1.8em; /* Add more padding */
+  }
+
+  h1 {
+    font-size: 1.1em; /* Adjust heading size */
+  }
+
+  p {
+    font-size: 0.9em; /* Reduce paragraph font size */
+  }
+
+  .eduCodeBlock {
+    padding: 8px; /* Further reduce padding for very small screens */
+    font-size: 0.85em; /* Slightly smaller font size for better fit */
   }
 }
