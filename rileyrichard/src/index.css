@@ -290,6 +290,13 @@ details[open] > summary::before {
 }
 .resume {
   color: #ffffff;
+  font-size: 1.2em;
+}
+.resumeHere {
+  color: #ffc61b;
+}
+.resumeHere:hover {
+  color: #ffc61b;
 }
 .resume:hover {
   color: #ffc61b;

@@ -8,7 +8,6 @@ import Pbbdev from "./Current/play.blueberry.dev";
 import Bianry from "./Past/bianry";
 import MickeyDeesReloaded from "./Current/mickeydeesreloaded";
 import MercuryHomelab from "./Current/homelab";
-import { Grid } from "@mantine/core";
 
 const Projects: React.FC = () => {
   return (
@@ -18,9 +17,6 @@ const Projects: React.FC = () => {
 
         <Pbbdev />
         <MercuryHomelab />
-      </details>
-      <details>
-        <summary className="projectTitle">Paused Projects</summary>
         <MickeyDeesReloaded />
       </details>
       <details>

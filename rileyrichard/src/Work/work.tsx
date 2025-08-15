@@ -5,8 +5,15 @@ const Work: React.FC = () => {
     <div className="container">
       {/* Page Title */}
       <h1 className="workTitle">Work Experience</h1>
-      <a className="resume" target="_blank" href="/resume.pdf">
-        You can download my resume here!
+      <a className="resume" target="_blank" href="/Riley_Richard_Resume.pdf">
+        You can download my resume{" "}
+        <a
+          className="resumeHere"
+          target="_blank"
+          href="/Riley_Richard_Resume.pdf">
+          here
+        </a>
+        !
       </a>
       {/* Work Experience Section */}
       <div className="workSection">
@@ -21,7 +28,7 @@ const Work: React.FC = () => {
               systems in a high-volume production environment.
             </li>
             <li>
-              Perform setup, calibration and troubleshooting of equipment to
+              Perform setup, calibration, and troubleshooting of equipment to
               meet production specifications.
             </li>
             <li>
@@ -29,8 +36,8 @@ const Work: React.FC = () => {
               ensure compliance with engineering and quality standards.
             </li>
             <li>
-              Collaborate with quality assurance and maintenance teams to
-              resolve equipment or product issues quickly.
+              Applied problem-solving, attention to detail, and technical
+              aptitude to maintain efficiency and prevent downtime.
             </li>
           </ul>
         </div>
@@ -41,12 +48,21 @@ const Work: React.FC = () => {
           <h3 className="workCompany">Best Buy - North Dartmouth, MA</h3>
           <p className="workDuration">February 2022 - January 2025</p>
           <ul className="workResponsibilities">
-            <li>Greets, welcomes, and engages with customers.</li>
             <li>
-              Uses acquired skills and knowledge to recommend products and
-              services to meet the customer's needs.
+              Provided personalized assistance to customers, ensuring a positive
+              in-store experience.
             </li>
-            <li>Assists customers with orders, returns, and exchanges.</li>
+            <li>
+              Recommended products and services aligned with individual needs.
+            </li>
+            <li>
+              Processed sales, returns, and exchanges efficiently to maintain
+              satisfaction.
+            </li>
+            <li>
+              Expanded technical knowledge through hands-on troubleshooting of
+              consumer electronics and computer systems.
+            </li>
           </ul>
         </div>
         <div className="workEntry">
@@ -56,13 +72,20 @@ const Work: React.FC = () => {
           </h3>
           <p className="workDuration">September 2021 - June 2022</p>
           <ul className="workResponsibilities">
-            <li>Led a team of 10 in a fast-paced work environment.</li>
-            <li>Completed projects in a timely manner.</li>
-            <li>Followed the Scrum Framework in game development.</li>
-            <li>Coached team members on workload management.</li>
             <li>
-              Experienced in Unity, C#, GitHub, Oculus (Meta) Quest, and Virtual
-              Reality Applications.
+              Led a 10-member team to deliver game development projects on
+              schedule.
+            </li>
+            <li>
+              Applied Scrum framework to manage sprints and optimize workflow.
+            </li>
+            <li>
+              Mentored team members on workload prioritization and Agile best
+              practices.
+            </li>
+            <li>
+              Developed VR applications using Unity, C#, GitHub, and Oculus
+              Quest SDK.
             </li>
           </ul>
         </div>
