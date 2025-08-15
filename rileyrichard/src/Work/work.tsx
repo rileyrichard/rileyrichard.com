@@ -12,17 +12,25 @@ const Work: React.FC = () => {
       <div className="workSection">
         {/* Example Work Entry */}
         <div className="workEntry">
-          <h2 className="workPosition">Co-Founder / Lead Developer</h2>
-          <h3 className="workCompany">Blueberry Technologies</h3>
-          <p className="workDuration">July 2022 - Present</p>
+          <h2 className="workPosition">Extrusion/Autojig Operator</h2>
+          <h3 className="workCompany">Acushnet Company</h3>
+          <p className="workDuration">October 2024 - Present</p>
           <ul className="workResponsibilities">
             <li>
-              Developed and maintained various projects and services using
-              multiple languages and frameworks.
+              Operate and maintain extrusion machinery and automated jigging
+              systems in a high-volume production environment.
             </li>
             <li>
-              Collaborated with a team of developers to implement new features
-              and services.
+              Perform setup, calibration and troubleshooting of equipment to
+              meet production specifications.
+            </li>
+            <li>
+              Monitor product quality and adjust machine parameters as needed to
+              ensure compliance with engineering and quality standards.
+            </li>
+            <li>
+              Collaborate with quality assurance and maintenance teams to
+              resolve equipment or product issues quickly.
             </li>
           </ul>
         </div>
