@@ -1,16 +1,13 @@
 {
   "name": "rileyrichard",
-  "homepage": "http://rileyrichard.com",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.1",
@@ -31,7 +28,6 @@
     "@tiptap/react": "^2.11.7",
     "@tiptap/starter-kit": "^2.11.7",
     "dayjs": "^1.11.13",
-    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-code-blocks": "^0.1.6",
     "react-dom": "^19.0.0",
