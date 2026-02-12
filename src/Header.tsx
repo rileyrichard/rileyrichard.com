@@ -5,8 +5,8 @@ const Header: React.FC = () => {
     <div>
       <h1 className="name">Riley Richard</h1>
       <h2 className="biz">
-        <a href="https://blueberry.dev" className="bbtech" target="_blank">
-          Blueberry Technologies
+        <a href="https://embeddedlabs.org" className="bbtech" target="_blank">
+          Embedded Laboratories
         </a>
       </h2>
       <h2 className="emailHeader">

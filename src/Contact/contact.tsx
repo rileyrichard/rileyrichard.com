@@ -10,9 +10,9 @@ const Contact: React.FC = () => {
         </a>
       </p>
       <p>
-        My timezone is Eastern Standard Time (UTC-05:00). I usually respond to
-        emails during normal working hours, but I occasionally code late at
-        night and I will respond then.
+        My timezone is Eastern Standard Time. I usually respond to emails during
+        normal working hours, but I occasionally code late at night and I will
+        respond then.
       </p>
       <p>
         You can also find me on GitHub{" "}
